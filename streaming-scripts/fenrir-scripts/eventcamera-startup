@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# if not working, check
+# lsubs -- camera USB bus ID are correct in the python script
+# is the target IP address the computer connected to the monitor? 172.16.222.30 (miniPC) or 172.16.222.60 (RTX3070)
+
+# ALTERNATIVE 1: Stream events over UDP to your computer
+# NOTE: UPDATE IP-ADDRESS TO YOUR COMPUTERS IP-ADDRESS
+python3 open_eyes.py -s udp -c
+
+# ALTERNATIVE 2: Stream events to CSV
+# python3 open_eyes.py -s csv
